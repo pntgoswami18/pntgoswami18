@@ -101,7 +101,7 @@ Last Updated on DD/MM/YYYY HH:MM:SS UTC
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="selenium" width="45" height="45"/>
 <img src="https://playwright.dev/img/playwright-logo.svg" alt="playwright" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/protractor/protractor-plain.svg" alt="protractor" width="45" height="45"/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/K6_software_logo.svg" alt="k6" width="45" height="45"/>
+<img src="https://raw.githubusercontent.com/grafana/k6/master/assets/logo.svg" alt="k6" width="45" height="45"/>
 <img src="https://avatars.githubusercontent.com/u/3221291" alt="appium" width="45" height="45"/>
 <img src="https://avatars.githubusercontent.com/u/65870663" alt="maestro" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb" width="45" height="45"/>
