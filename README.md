@@ -83,11 +83,11 @@ Last Updated on DD/MM/YYYY HH:MM:SS UTC
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="docker" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="selenium" width="45" height="45"/>
-<img src="https://raw.githubusercontent.com/microsoft/playwright/main/utils/docker/Dockerfile.jammy" alt="playwright" width="45" height="45"/>
+<img src="https://playwright.dev/img/playwright-logo.svg" alt="playwright" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/protractor/protractor-plain.svg" alt="protractor" width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/k6/k6-original.svg" alt="k6" width="45" height="45"/>
-<img src="https://avatars.githubusercontent.com/u/97060683?s=200&v=4" alt="appium" width="45" height="45"/>
-<img src="https://docs.mobile.dev/img/maestro-logo.png" alt="maestro" width="45" height="45"/>
+<img src="https://raw.githubusercontent.com/grafana/k6-docs/main/src/images/k6-logo.svg" alt="k6" width="45" height="45"/>
+<img src="https://raw.githubusercontent.com/appium/appium/master/packages/appium/docs/assets/images/appium-logo-horiz.png" alt="appium" width="45" height="45"/>
+<img src="https://raw.githubusercontent.com/mobile-dev-inc/maestro/main/maestro-studio/web/public/img/maestro_logo.png" alt="maestro" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="45" height="45"/>
