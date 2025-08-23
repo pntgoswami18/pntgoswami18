@@ -6,10 +6,6 @@ _Senior Software Engineer in Test at FloBiz_
 [![Linkedin: pntgoswami18](https://img.shields.io/badge/-punitgoswami-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/punit-goswami/)](https://www.linkedin.com/in/punit-goswami/)
 [![GitHub pntgoswami18](https://img.shields.io/github/followers/pntgoswami18?label=follow&style=social)](https://github.com/pntgoswami18)
 
-### 📫 Like to meet me?
-
-Pick a slot if you'd like to meet me and chat about anything you are passionate about - but make sure to describe the agenda
-
 ### A little more about me...
 
 ```javascript
@@ -59,52 +55,6 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 > 🔑 Private Repositories
 > 
 > 🏷️ 22 Public Gists
-
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning    ████░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-🌆 Daytime    ██████████░░░░░░░░░░░░░░░   XX.XX% 
-🌃 Evening    ███████░░░░░░░░░░░░░░░░░░   XX.XX% 
-🌙 Night      ███░░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-```
-📅 **I'm Most Productive on Sunday** 
-
-```text
-Monday       ███░░░░░░░░░░░░░░░░░░░░░░   XX.XX % 
-Tuesday      ████░░░░░░░░░░░░░░░░░░░░░   XX.XX % 
-Wednesday    ████░░░░░░░░░░░░░░░░░░░░░   XX.XX % 
-Thursday     ███░░░░░░░░░░░░░░░░░░░░░░   XX.XX % 
-Friday       ██░░░░░░░░░░░░░░░░░░░░░░░   XX.XX % 
-Saturday     ███░░░░░░░░░░░░░░░░░░░░░░   XX.XX % 
-Sunday       ██████░░░░░░░░░░░░░░░░░░░   XX.XX % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-⌚︎ Time Zone: Asia/Kolkata
-
-💬 Programming Languages: 
-JavaScript               XX hrs XX mins  ██████████████████████░░░   XX.XX% 
-Python                   XX hrs XX mins  █████░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-TypeScript               XX hrs XX mins  ███░░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-HTML                     XX mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-CSS                      XX mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-
-🔥 Editors: 
-VS Code                  XX hrs XX mins  █████████████████████░░░░   XX.XX% 
-IntelliJ IDEA            XX hrs XX mins  ████░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-
-🐱‍💻 Projects: 
-gmgmt                    XX hrs XX mins  ██████████████░░░░░░░░░░░   XX.XX% 
-QAinsights               XX hrs XX mins  █████░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-test-automation          XX hrs XX mins  ███░░░░░░░░░░░░░░░░░░░░░░   XX.XX% 
-
-💻 Operating System: 
-Mac                      XX hrs XX mins  █████████████████████████   100.00% 
-```
 
 **I Mostly Code in JavaScript** 
 
