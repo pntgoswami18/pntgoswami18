@@ -20,18 +20,6 @@ When I'm not in front of a computer, you can find me:
 
 ---
 
-### 📌 Pinned Repositories
-
-<!-- 
-To pin your repositories, go to your GitHub profile, find the "Pinned" section, and choose the repositories you want to feature. Then, you can manually add links to them here. 
-
-For example:
-- [**Project Name 1**](https://github.com/pntgoswami18/project-name-1): A brief description of your project.
-- [**Project Name 2**](https://github.com/pntgoswami18/project-name-2): Another cool project and what it does.
--->
-
----
-
 ### 📊 My GitHub Stats
 
 <p align="center">
