@@ -3,7 +3,7 @@
 _Senior Software Engineer in Test at FloBiz_ 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/pntgoswami?style=social)](https://twitter.com/pntgoswami)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/punit-goswami/)
+[![LinkedIn](https://img.shields.io/badge/-punitgoswami-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/punit-goswami/)](https://www.linkedin.com/in/punit-goswami/)
 [![GitHub pntgoswami18](https://img.shields.io/github/followers/pntgoswami18?label=follow&style=social)](https://github.com/pntgoswami18)
 
 ### A little more about me...
