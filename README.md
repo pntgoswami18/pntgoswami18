@@ -1,3 +1,5 @@
+![punitfetch](./punitfetch.svg)
+
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
 
 _Senior Software Engineer in Test at FloBiz_ 
@@ -10,9 +12,9 @@ I'm a software enthusiast with a passion for testing frameworks, automation, and
 
 ### 🙋‍♂️ About Me
 
-- 🔭 I’m passionate about building robust automation frameworks and exploring the world of NLP.
-- 🌱 I’m currently learning to play the guitar 🎸 and video editing 🎬.
-- 👯 I’m looking to collaborate on open-source testing tools and NLP projects.
+- 🔭 I'm passionate about building robust automation frameworks and exploring the world of NLP.
+- 🌱 I'm currently learning to play the guitar 🎸 and video editing 🎬.
+- 👯 I'm looking to collaborate on open-source testing tools and NLP projects.
 - 💬 Ask me about Maestro, Appium, CI/CD pipelines, or anything related to test automation.
 - 📫 How to reach me: [pntgoswami18@gmail.com](mailto:pntgoswami18@gmail.com)
 
@@ -55,36 +57,6 @@ const punit = {
 ```
 
 _**I love connecting with different people** so if you want to say **hi, I'll be happy to meet you more!** 😊_
-
----
-
-**🐱 My GitHub Data** 
-
-> 📦 Used in GitHub's Storage 
-> 
-> 🏆 Contributions in the Year 2025
-> 
-> 🚫 Not Opted to Hire
-> 
-> 📜 18 Public Repositories 
-> 
-> 🔑 Private Repositories
-> 
-> 🏷️ 22 Public Gists
-
-**I Mostly Code in JavaScript** 
-
-```text
-JavaScript               8 repos             ██████████░░░░░░░░░░░░░░░   44.44% 
-Python                   6 repos             ████████░░░░░░░░░░░░░░░░░   33.33% 
-TypeScript               2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   11.11% 
-HTML                     1 repo              ░░░░░░░░░░░░░░░░░░░░░░░░░   05.56% 
-Other                    1 repo              ░░░░░░░░░░░░░░░░░░░░░░░░░   05.56% 
-```
-
-Last Updated on DD/MM/YYYY HH:MM:SS UTC
-
-<!-- **These Readme stats are generated using github action [awesome-readme-stats](https://github.com/anmol098/waka-readme-stats)** -->
 
 ---
 

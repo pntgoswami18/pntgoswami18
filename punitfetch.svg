@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;display=swap');</style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#79c0ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="760" height="340" rx="10" fill="url(#bg)"/>
+  <rect width="760" height="340" rx="10" fill="none" stroke="url(#border-grad)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="760" height="34" rx="10" fill="#161b22"/>
+  <rect x="0" y="24" width="760" height="10" fill="#161b22"/>
+  <rect x="0" y="24" width="760" height="1" fill="#30363d"/>
+  <circle cx="20" cy="17" r="5" fill="#ff5f57"/>
+  <circle cx="36" cy="17" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="17" r="5" fill="#28c840"/>
+  <text x="380" y="22" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#8b949e">punitfetch — pntgoswami18@github</text>
+  <line x1="273" y1="42" x2="273" y2="288" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="28" y="142" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" fill="#7c3aed" font-weight="700" letter-spacing="-0.5">  ██████╗  ██████╗ </text><text x="28" y="162" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" fill="#7c3aed" font-weight="700" letter-spacing="-0.5">  ██╔══██╗██╔════╝ </text><text x="28" y="182" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" fill="#7c3aed" font-weight="700" letter-spacing="-0.5">  ██████╔╝██║  ███╗</text><text x="28" y="202" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" fill="#7c3aed" font-weight="700" letter-spacing="-0.5">  ██╔═══╝ ██║   ██║</text><text x="28" y="222" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" fill="#7c3aed" font-weight="700" letter-spacing="-0.5">  ██║     ╚██████╔╝</text><text x="28" y="242" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" fill="#7c3aed" font-weight="700" letter-spacing="-0.5">  ╚═╝      ╚═════╝ </text>
+  <text x="28" y="72" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" fill="#79c0ff" font-weight="700" letter-spacing="1">LANGUAGES</text>
+      <text x="28" y="98.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#8b949e">JavaScript  </text>
+      <text x="136" y="98.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#f1e05a">████████<tspan fill="#2d333b">░░░░░░░░░░</tspan></text>
+      <text x="289" y="98.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#e3b341">  46%</text>
+      <text x="28" y="119.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#8b949e">TypeScript  </text>
+      <text x="136" y="119.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#3178c6">████<tspan fill="#2d333b">░░░░░░░░░░░░░░</tspan></text>
+      <text x="289" y="119.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#e3b341">  22%</text>
+      <text x="28" y="140.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#8b949e">Kotlin      </text>
+      <text x="136" y="140.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#7c3aed">███<tspan fill="#2d333b">░░░░░░░░░░░░░░░</tspan></text>
+      <text x="289" y="140.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#e3b341">  19%</text>
+      <text x="28" y="161.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#8b949e">Python      </text>
+      <text x="136" y="161.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#3572A5">█<tspan fill="#2d333b">░░░░░░░░░░░░░░░░░</tspan></text>
+      <text x="289" y="161.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#e3b341">   7%</text>
+      <text x="28" y="182.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#8b949e">HTML        </text>
+      <text x="136" y="182.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#e34c26">█<tspan fill="#2d333b">░░░░░░░░░░░░░░░░░</tspan></text>
+      <text x="289" y="182.6" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#e3b341">   6%</text>
+  
+      <text x="295" y="63.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">user</text>
+      <text x="410" y="63.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="63.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Punit Goswami (pntgoswami18)</text>
+      <text x="295" y="82.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">role</text>
+      <text x="410" y="82.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="82.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Senior SDET · QA Lead @ FloBiz</text>
+      <text x="295" y="101.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">os</text>
+      <text x="410" y="101.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="101.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">macOS · M1 · 8+ yrs xp</text>
+      <text x="295" y="120.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">shell</text>
+      <text x="410" y="120.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="120.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Playwright · Cypress · Appium</text>
+      <text x="295" y="139.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">location</text>
+      <text x="410" y="139.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="139.4" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Haldwani, Uttarakhand</text>
+      <text x="295" y="169.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">repos</text>
+      <text x="410" y="169.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="169.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">24 public</text>
+      <text x="295" y="188.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">stars</text>
+      <text x="410" y="188.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="188.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">1 ★</text>
+      <text x="295" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">commits</text>
+      <text x="410" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">377 this year</text>
+      <text x="295" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">streak</text>
+      <text x="410" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">7 days 🔥</text>
+      <text x="295" y="245.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">PRs merged</text>
+      <text x="410" y="245.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="245.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">154</text>
+      <text x="295" y="264.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">followers</text>
+      <text x="410" y="264.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="264.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">0</text>
+      <text x="295" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">last push</text>
+      <text x="410" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">22h ago</text>
+      <text x="295" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
+      <text x="410" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Thu, 11 Jun 2026 15:17:58</text>
+  <rect x="28" y="298" width="22" height="14" rx="2" fill="#ff7b72"/><rect x="53" y="298" width="22" height="14" rx="2" fill="#f0883e"/><rect x="78" y="298" width="22" height="14" rx="2" fill="#e3b341"/><rect x="103" y="298" width="22" height="14" rx="2" fill="#3fb950"/><rect x="128" y="298" width="22" height="14" rx="2" fill="#79c0ff"/><rect x="153" y="298" width="22" height="14" rx="2" fill="#c678dd"/><rect x="178" y="298" width="22" height="14" rx="2" fill="#7c3aed"/><rect x="203" y="298" width="22" height="14" rx="2" fill="#8b949e"/>
+  <text x="234" y="309" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10" fill="#8b949e">■ lang spread</text>
+  <rect x="0" y="336" width="760" height="4" rx="0" fill="url(#border-grad)"/>
+</svg>
