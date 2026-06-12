@@ -67,7 +67,7 @@
       <text x="420" y="188.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">1 ★</text>
       <text x="295" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">commits</text>
       <text x="410" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">395 this year</text>
+      <text x="420" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">397 this year</text>
       <text x="295" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">streak</text>
       <text x="410" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">8 days 🔥</text>
@@ -82,8 +82,8 @@
       <text x="420" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">1d ago</text>
       <text x="295" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
       <text x="410" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 04:48:45 UTC</text>
-  <rect x="28" y="338" width="101" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="131" y="338" width="48" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="181" y="338" width="42" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="225" y="338" width="15" height="14" rx="2" fill="#3572A5" opacity="0.9"/><rect x="242" y="338" width="13" height="14" rx="2" fill="#e34c26" opacity="0.9"/>
-  <text x="263" y="349" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10" fill="#8b949e">■ lang spread</text>
+      <text x="420" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 04:49:40 UTC</text>
+  <rect x="28" y="338" width="117" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="147" y="338" width="51" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="200" y="338" width="24" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="226" y="338" width="18" height="14" rx="2" fill="#3572A5" opacity="0.9"/><rect x="246" y="338" width="11" height="14" rx="2" fill="#7c3aed" opacity="0.9"/>
+  <text x="265" y="349" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10" fill="#8b949e">■ lang spread</text>
   <rect x="0" y="376" width="760" height="4" rx="0" fill="url(#border-grad)"/>
 </svg>
