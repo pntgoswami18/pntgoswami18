@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1781248489970">
-  <img alt="punitfetch" src="./profile-card-light.svg?v=1781248489970">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1781248541411">
+  <img alt="punitfetch" src="./profile-card-light.svg?v=1781248541411">
 </picture>
 
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
