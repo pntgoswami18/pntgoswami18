@@ -104,9 +104,11 @@ function buildSVG(stats) {
   const LANG_COLORS = {
     JavaScript:"#f1e05a", TypeScript:"#3178c6", Python:"#3572A5",
     Java:"#b07219", HTML:"#e34c26", CSS:"#563d7c", Shell:"#89e051",
+    Kotlin:"#A97BFF", Ruby:"#701516", Go:"#00ADD8", Rust:"#dea584",
   };
 
-  const W=760, H=340, MONO="'JetBrains Mono','Fira Code',monospace", LH=19, FONT=13;
+  // H=380 gives enough vertical room for ASCII (90px) + languages (105px) + padding
+  const W=760, H=380, MONO="'JetBrains Mono','Fira Code',monospace", LH=19, FONT=13;
   const LEFT_X=28, RIGHT_X=295, TOP_Y=52;
   const now = new Date().toUTCString().slice(0, 25);
 
@@ -121,10 +123,14 @@ function buildSVG(stats) {
     ["last push",lastPush], ["",""], ["updated",now],
   ];
 
+  // PG logo — only solid block chars; box-drawing chars (╗╚═║) have inconsistent
+  // advance widths in SVG web fonts and produce garbled output
   const ascii = [
-    "  ██████╗  ██████╗ ","  ██╔══██╗██╔════╝ ",
-    "  ██████╔╝██║  ███╗","  ██╔═══╝ ██║   ██║",
-    "  ██║     ╚██████╔╝","  ╚═╝      ╚═════╝ ",
+    "████  ████",
+    "█  █ █    ",
+    "████ █ ███",
+    "█    █   █",
+    "█     ████",
   ];
 
   let rowsSVG="", y=TOP_Y;
@@ -137,22 +143,34 @@ function buildSVG(stats) {
     y += LH;
   }
 
-  let langSVG=`<text x="${LEFT_X}" y="${TOP_Y+20}" font-family="${MONO}" font-size="11" fill="${C.cyan}" font-weight="700" letter-spacing="1">LANGUAGES</text>`;
-  let langY = TOP_Y + 20 + LH*1.4;
-  for (const { name:ln, pct } of languages) {
-    const color = LANG_COLORS[ln] || C.accent;
-    const filled=Math.round(pct/100*18), empty=18-filled;
-    langSVG += `
-      <text x="${LEFT_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${C.dim}">${esc(pad(ln,12))}</text>
-      <text x="${LEFT_X+108}" y="${langY}" font-family="${MONO}" font-size="12" fill="${color}">${"█".repeat(filled)}<tspan fill="#2d333b">${"░".repeat(empty)}</tspan></text>
-      <text x="${LEFT_X+108+18*8.5}" y="${langY}" font-family="${MONO}" font-size="12" fill="${C.yellow}"> ${String(pct).padStart(3)}%</text>`;
-    langY += LH+2;
+  // ASCII art occupies y=57 to y=57+5×18=147 — rendered first so languages sit below it
+  let asciiSVG="";
+  let ay = TOP_Y + 5;
+  for (const line of ascii) {
+    asciiSVG += `<text x="${LEFT_X}" y="${ay}" font-family="${MONO}" font-size="13" fill="${C.accent}" font-weight="700">${esc(line)}</text>`;
+    ay += 18;
   }
 
-  let asciiSVG=""; let ay=TOP_Y+90;
-  for (const line of ascii) {
-    asciiSVG += `<text x="${LEFT_X}" y="${ay}" font-family="${MONO}" font-size="14.5" fill="${C.accent}" font-weight="700" letter-spacing="-0.5">${esc(line)}</text>`;
-    ay += 20;
+  // Languages section starts at y=162 (below ASCII art which ends ~y=147)
+  // Bar layout (left panel is 28→265px, divider at 273):
+  //   name  : x=28,  10 chars × 7.2px ≈ 72px  → ends ~100
+  //   bar   : x=110, 14 chars × 7.2px ≈ 101px → ends ~211
+  //   pct   : x=216, 4  chars × 7.2px ≈ 29px  → ends ~245  ✓ (< 273)
+  const BAR_LEN = 14;
+  const BAR_X = LEFT_X + 82;   // = 110
+  const PCT_X  = BAR_X + 106;  // = 216
+
+  let langSVG = `<text x="${LEFT_X}" y="${TOP_Y+110}" font-family="${MONO}" font-size="11" fill="${C.cyan}" font-weight="700" letter-spacing="1">LANGUAGES</text>`;
+  let langY = TOP_Y + 110 + 17;
+  for (const { name:ln, pct } of languages) {
+    const color = LANG_COLORS[ln] || C.accent;
+    const filled = Math.round(pct / 100 * BAR_LEN);
+    const empty  = BAR_LEN - filled;
+    langSVG += `
+      <text x="${LEFT_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${C.dim}">${esc(pad(ln, 10))}</text>
+      <text x="${BAR_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${color}">${"█".repeat(filled)}<tspan fill="#2d333b">${"░".repeat(empty)}</tspan></text>
+      <text x="${PCT_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${C.yellow}">${String(pct).padStart(3)}%</text>`;
+    langY += 21;
   }
 
   const swatchColors=[C.red,C.orange,C.yellow,C.green,C.cyan,C.purple,C.accent,C.dim];
