@@ -52,7 +52,7 @@ const punit = {
         }
     },
     currentFocus: "Leading quality engineering initiatives and test automation",
-    funFact: "I can find bugs faster with a cup of chai in hand! ☕"
+    funFact: "I can find bugs faster with a cup of coffee in hand! ☕"
 };
 ```
 
