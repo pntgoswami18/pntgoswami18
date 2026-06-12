@@ -135,21 +135,17 @@ function buildSVG(stats) {
     y += LH;
   }
 
-  // Stylised "PG" monogram — three layers create a drop shadow + glow look
-  // using only basic SVG text attributes. GitHub's Camo proxy strips <filter>
-  // elements entirely, so feGaussianBlur / feDropShadow never render there;
-  // offset-layer stacking is the only reliable technique.
-  //
-  // Layer 1 (deepest shadow): dark purple, offset +4 +4, 55% opacity
-  // Layer 2 (soft glow halo): accent colour, offset +2 +2, 28% opacity
-  // Layer 3 (main text):      accent colour, no offset, 95% opacity
+  // Stylised "PG" monogram — two layers:
+  // 1. Drop shadow: vivid dark purple (#4a1a8c) offset +6,+6 — contrast is
+  //    critical; the old #1a0840 was invisible against the #0d1117 background.
+  // 2. Main text: accent purple with filter="url(#glow)" for the halo effect.
+  //    SVG filters work fine in <img> SVGs (only JS/external resources are blocked).
   //
   // Baseline y=141 → cap-top ≈ y=84, descenders ≈ y=157 → 5px gap before LANGUAGES at y=162 ✓
   const LOGO_OPTS = `font-family="${MONO}" font-size="80" font-weight="700" letter-spacing="6"`;
   const asciiSVG = `
-    <text x="${LEFT_X+4}" y="${TOP_Y+93}" ${LOGO_OPTS} fill="#1a0840" opacity="0.55">PG</text>
-    <text x="${LEFT_X+2}" y="${TOP_Y+91}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.28">PG</text>
-    <text x="${LEFT_X}"   y="${TOP_Y+89}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.95">PG</text>`;
+    <text x="${LEFT_X+6}" y="${TOP_Y+95}" ${LOGO_OPTS} fill="#4a1a8c" opacity="0.9">PG</text>
+    <text x="${LEFT_X}"   y="${TOP_Y+89}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.95" filter="url(#glow)">PG</text>`;
 
   // Languages section starts at y=162 (below ASCII art which ends ~y=147)
   // Bar layout (left panel is 28→265px, divider at 273):
@@ -194,8 +190,9 @@ function buildSVG(stats) {
       <stop offset="50%" stop-color="${C.cyan}" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="${C.accent}" stop-opacity="0.2"/>
     </linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
   <rect width="${W}" height="${H}" rx="10" fill="url(#bg)"/>
