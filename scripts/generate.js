@@ -239,6 +239,18 @@ async function main() {
   const outPath = path.join(__dirname, "..", "profile-card.svg");
   fs.writeFileSync(outPath, svg, "utf8");
   console.log("✅ Written →", outPath);
+
+  // Bump the cache-buster in README so Camo fetches a fresh copy every run.
+  // Camo keys on the full URL — only a URL change forces re-fetch.
+  const readmePath = path.join(__dirname, "..", "README.md");
+  const readme = fs.readFileSync(readmePath, "utf8");
+  const ts = Date.now();
+  const updated = readme.replace(
+    /!\[punitfetch\]\(\.\/profile-card\.svg[^)]*\)/,
+    `![punitfetch](./profile-card.svg?v=${ts})`
+  );
+  fs.writeFileSync(readmePath, updated, "utf8");
+  console.log("✅ README cache-buster updated →", `?v=${ts}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
