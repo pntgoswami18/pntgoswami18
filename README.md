@@ -2,7 +2,7 @@
 
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&color=7C3AED&width=500&lines=Senior+SDET+%40+FloBiz;Test+Automation+Engineer;NLP+Enthusiast;EDM+Producer+%F0%9F%8E%B5;Bug+Hunter+%E2%98%95)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&color=7C3AED&width=500&height=50&lines=Senior+SDET+%40+FloBiz;Test+Automation+Engineer;NLP+Enthusiast;EDM+Producer+%F0%9F%8E%B5;Bug+Hunter+%E2%98%95)](https://git.io/typing-svg)
 
 _Senior Software Engineer in Test at FloBiz_ 
 
