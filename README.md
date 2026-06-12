@@ -1,4 +1,4 @@
-![punitfetch](./punitfetch.svg)
+![punitfetch](./punitfetch.svg?v=2)
 
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
 
