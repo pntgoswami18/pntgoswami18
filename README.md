@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1781248541411">
-  <img alt="punitfetch" src="./profile-card-light.svg?v=1781248541411">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1781256002768">
+  <img alt="punitfetch" src="./profile-card-light.svg?v=1781256002768">
 </picture>
 
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
@@ -86,6 +86,16 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="jenkins" width="45" height="45"/>
 </p>
+
+<!-- PINS_START -->
+### 📌 Pinned Projects
+
+<table>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1781256002768"><img src="./pins/wifipythonutils-light.svg?v=1781256002768" alt="wifiPythonUtils" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/bitcoin-tracker.svg?v=1781256002768"><img src="./pins/bitcoin-tracker-light.svg?v=1781256002768" alt="bitcoin_tracker" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1781256002768"><img src="./pins/gmgmt-light.svg?v=1781256002768" alt="gmgmt" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/markovchain.svg?v=1781256002768"><img src="./pins/markovchain-light.svg?v=1781256002768" alt="markovChain" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1781256002768"><img src="./pins/python-bugspots-light.svg?v=1781256002768" alt="python-bugspots" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/travel-catalogue.svg?v=1781256002768"><img src="./pins/travel-catalogue-light.svg?v=1781256002768" alt="travel_catalogue" width="370"/></picture></td></tr>
+</table>
+<!-- PINS_END -->
 
 ### 📈 GitHub Stats
 
