@@ -112,7 +112,7 @@ function buildSVG(stats) {
   // H=380 gives enough vertical room for ASCII (90px) + languages (105px) + padding
   const W=760, H=380, MONO="'JetBrains Mono','Fira Code',monospace", LH=19, FONT=13;
   const LEFT_X=28, RIGHT_X=295, TOP_Y=52;
-  const now = new Date().toUTCString().slice(0, 25);
+  const now = new Date().toUTCString().replace("GMT", "UTC");
 
   const rows = [
     ["",""], ["user",`${name} (${login})`], ["role","Senior SDET · QA Lead @ FloBiz"],
