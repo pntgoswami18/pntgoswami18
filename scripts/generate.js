@@ -236,7 +236,7 @@ async function main() {
   };
   console.log("📊 Stats:", { stars, streak, repos: stats.repositories, topLang: languages[0] });
   const svg = buildSVG(stats);
-  const outPath = path.join(__dirname, "..", "punitfetch.svg");
+  const outPath = path.join(__dirname, "..", "profile-card.svg");
   fs.writeFileSync(outPath, svg, "utf8");
   console.log("✅ Written →", outPath);
 }
