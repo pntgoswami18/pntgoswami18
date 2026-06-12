@@ -94,7 +94,7 @@ function esc(str) {
 }
 
 function buildSVG(stats) {
-  const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars, latestPost, latestTrack } = stats;
+  const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars, latestPost, latestTrack, wakaTime } = stats;
 
   const C = {
     bg:"#0d1117", bgCard:"#161b22", border:"#30363d",
@@ -127,6 +127,7 @@ function buildSVG(stats) {
     ["streak", streak > 0 ? `${streak} days 🔥` : "0 days"],
     ["PRs merged",`${totalPRs}`], ["followers",`${followers}`],
     ["last push",lastPush],
+    ...(wakaTime  ? [["waka/wk", wakaTime]]   : []),
     ...(latestTrack ? [["♫ now",latestTrack]] : []),
     ...(latestPost ? [["blog",latestPost]] : []),
     ["",""], ["updated",now],
@@ -221,6 +222,26 @@ function buildSVG(stats) {
 </svg>`;
 }
 
+async function fetchWakaStats() {
+  const key = process.env.WAKATIME_API_KEY;
+  if (!key) return null;
+  try {
+    const auth = Buffer.from(key).toString("base64");
+    const res = await fetch("https://wakatime.com/api/v1/users/current/stats/last_7_days", {
+      headers: { Authorization: `Basic ${auth}` },
+      signal: AbortSignal.timeout(8000),
+    });
+    const json = await res.json();
+    const sec = json?.data?.total_seconds;
+    if (!sec) return null;
+    const hrs = Math.floor(sec / 3600);
+    const mins = Math.floor((sec % 3600) / 60);
+    return hrs > 0 ? `${hrs}h ${mins}m this week` : `${mins}m this week`;
+  } catch {
+    return null;
+  }
+}
+
 async function fetchLatestTrack() {
   try {
     const SC_USER_ID = "79402984";
@@ -256,7 +277,7 @@ async function fetchLatestBlogPost() {
 
 async function main() {
   console.log("⏳ Fetching GitHub stats for", USERNAME);
-  const [user, latestPost, latestTrack] = await Promise.all([fetchGitHubStats(), fetchLatestBlogPost(), fetchLatestTrack()]);
+  const [user, latestPost, latestTrack, wakaTime] = await Promise.all([fetchGitHubStats(), fetchLatestBlogPost(), fetchLatestTrack(), fetchWakaStats()]);
   const repos = user.repositories.nodes;
   const cal = user.contributionsCollection.contributionCalendar;
   const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
@@ -270,7 +291,7 @@ async function main() {
     totalCommits: user.contributionsCollection.totalCommitContributions,
     totalPRs: user.pullRequests.totalCount,
     streak, languages, lastPush: last ? timeAgo(last.pushedAt) : "unknown",
-    latestPost, latestTrack,
+    latestPost, latestTrack, wakaTime,
   };
   console.log("📊 Stats:", { stars, streak, repos: stats.repositories, topLang: languages[0] });
   const svg = buildSVG(stats);

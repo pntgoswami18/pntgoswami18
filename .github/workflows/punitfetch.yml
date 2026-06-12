@@ -23,6 +23,7 @@ jobs:
       - name: Generate SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         run: node scripts/generate.js
       - name: Commit if changed
         run: |
