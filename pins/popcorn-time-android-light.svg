@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="150" viewBox="0 0 370 150">
+  <defs>
+    <linearGradient id="bg-p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f6f8fa"/>
+    </linearGradient>
+    <linearGradient id="brd-p" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0969da" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="370" height="150" rx="8" fill="url(#bg-p)"/>
+  <rect width="370" height="150" rx="8" fill="none" stroke="url(#brd-p)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="370" height="28" rx="8" fill="#f6f8fa"/>
+  <rect x="0" y="18" width="370" height="10" fill="#f6f8fa"/>
+  <rect x="0" y="27" width="370" height="1" fill="#d0d7de"/>
+  <circle cx="14" cy="14" r="4" fill="#ff5f57"/>
+  <circle cx="26" cy="14" r="4" fill="#febc2e"/>
+  <circle cx="38" cy="14" r="4" fill="#28c840"/>
+  <text x="185" y="18" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#656d76">pntgoswami18/popcorn-time-android</text>
+  <text x="14" y="50" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="15" font-weight="700" fill="#1f2328">popcorn-time-android</text>
+  <text x="14" y="66" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#656d76">Popcorn Time for Android — native torrent streaming …</text>
+  <circle cx="19" cy="87" r="5" fill="#A97BFF"/>
+  <text x="30" y="91" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#656d76">Kotlin</text>
+  <text x="130" y="91" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#656d76">★ 0</text>
+  <text x="175" y="91" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#656d76">⎇ 0</text>
+  <text x="215" y="91" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#656d76">pushed 3h ago</text>
+  
+  <rect x="0" y="146" width="370" height="4" rx="0" fill="url(#brd-p)"/>
+</svg>
