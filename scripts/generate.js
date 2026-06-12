@@ -223,10 +223,15 @@ function buildSVG(stats) {
 
 async function fetchLatestTrack() {
   try {
-    const SC_CLIENT_ID = "QNR5nrdLOvApYERC8AOUr3VjRfHnLjle";
-    const SC_USER_ID   = "79402984";
+    const SC_USER_ID = "79402984";
+    const html = await fetch("https://soundcloud.com", { signal: AbortSignal.timeout(8000) }).then(r => r.text());
+    const scriptUrl = html.match(/https:\/\/a-v2\.sndcdn\.com\/assets\/[0-9]+-[a-f0-9]+\.js/g)?.slice(-1)[0];
+    if (!scriptUrl) return null;
+    const js = await fetch(scriptUrl, { signal: AbortSignal.timeout(8000) }).then(r => r.text());
+    const clientId = js.match(/client_id:"([^"]+)"/)?.[1];
+    if (!clientId) return null;
     const res = await fetch(
-      `https://api-v2.soundcloud.com/users/${SC_USER_ID}/tracks?limit=1&client_id=${SC_CLIENT_ID}`,
+      `https://api-v2.soundcloud.com/users/${SC_USER_ID}/tracks?limit=1&client_id=${clientId}`,
       { signal: AbortSignal.timeout(5000) }
     );
     const json = await res.json();

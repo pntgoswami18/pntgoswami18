@@ -29,20 +29,20 @@
     <text x="28"   y="140" font-family="DSEG14,ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="72" font-weight="700" letter-spacing="4" fill="#7c3aed" opacity="0.95" filter="url(#glow)">PG</text>
   <text x="28" y="162" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#79c0ff" font-weight="700" letter-spacing="1">LANGUAGES</text>
       <text x="28" y="179" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">JavaScript</text>
-      <text x="110" y="179" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#f1e05a">███████<tspan fill="#2d333b">░░░░░░░</tspan></text>
-      <text x="216" y="179" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341"> 51%</text>
+      <text x="110" y="179" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#f1e05a">██████<tspan fill="#2d333b">░░░░░░░░</tspan></text>
+      <text x="216" y="179" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341"> 44%</text>
       <text x="28" y="200" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">Kotlin    </text>
-      <text x="110" y="200" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#A97BFF">████<tspan fill="#2d333b">░░░░░░░░░░</tspan></text>
-      <text x="216" y="200" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341"> 26%</text>
+      <text x="110" y="200" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#A97BFF">███<tspan fill="#2d333b">░░░░░░░░░░░</tspan></text>
+      <text x="216" y="200" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341"> 22%</text>
       <text x="28" y="221" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">TypeScript</text>
-      <text x="110" y="221" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#3178c6">██<tspan fill="#2d333b">░░░░░░░░░░░░</tspan></text>
-      <text x="216" y="221" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341"> 11%</text>
-      <text x="28" y="242" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">Python    </text>
-      <text x="110" y="242" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#3572A5">█<tspan fill="#2d333b">░░░░░░░░░░░░░</tspan></text>
-      <text x="216" y="242" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341">  8%</text>
-      <text x="28" y="263" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">C++       </text>
-      <text x="110" y="263" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#7c3aed">█<tspan fill="#2d333b">░░░░░░░░░░░░░</tspan></text>
-      <text x="216" y="263" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341">  5%</text>
+      <text x="110" y="221" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#3178c6">███<tspan fill="#2d333b">░░░░░░░░░░░</tspan></text>
+      <text x="216" y="221" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341"> 21%</text>
+      <text x="28" y="242" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">HTML      </text>
+      <text x="110" y="242" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e34c26">█<tspan fill="#2d333b">░░░░░░░░░░░░░</tspan></text>
+      <text x="216" y="242" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341">  7%</text>
+      <text x="28" y="263" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">Python    </text>
+      <text x="110" y="263" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#3572A5">█<tspan fill="#2d333b">░░░░░░░░░░░░░</tspan></text>
+      <text x="216" y="263" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#e3b341">  6%</text>
   
       <text x="295" y="63.4" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">user</text>
       <text x="410" y="63.4" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
@@ -61,25 +61,25 @@
       <text x="420" y="139.4" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Haldwani, Uttarakhand</text>
       <text x="295" y="169.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">repos</text>
       <text x="410" y="169.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="169.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">20 public</text>
+      <text x="420" y="169.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">24 public</text>
       <text x="295" y="188.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">stars</text>
       <text x="410" y="188.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="188.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">1 ★</text>
       <text x="295" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">commits</text>
       <text x="410" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">410 this year</text>
+      <text x="420" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">412 this year</text>
       <text x="295" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">streak</text>
       <text x="410" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">8 days 🔥</text>
       <text x="295" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">PRs merged</text>
       <text x="410" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">28</text>
+      <text x="420" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">154</text>
       <text x="295" y="264.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">followers</text>
       <text x="410" y="264.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="264.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">0</text>
       <text x="295" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">last push</text>
       <text x="410" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">32m ago</text>
+      <text x="420" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">37m ago</text>
       <text x="295" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">♫ now</text>
       <text x="410" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Trap Control</text>
@@ -88,7 +88,7 @@
       <text x="420" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Enhancing CI/CD: A Deep Dive into Buil…</text>
       <text x="295" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
       <text x="410" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 06:52:15 UTC</text>
+      <text x="420" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 06:57:11 UTC</text>
   <rect x="28" y="378" width="97" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="127" y="378" width="48" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="177" y="378" width="46" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="225" y="378" width="15" height="14" rx="2" fill="#e34c26" opacity="0.9"/><rect x="242" y="378" width="13" height="14" rx="2" fill="#3572A5" opacity="0.9"/>
   <text x="263" y="389" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#8b949e">■ lang spread</text>
   <rect x="0" y="416" width="760" height="4" rx="0" fill="url(#border-grad)"/>
