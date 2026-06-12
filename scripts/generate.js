@@ -171,11 +171,14 @@ function buildSVG(stats) {
     langY += 21;
   }
 
-  const swatchColors=[C.red,C.orange,C.yellow,C.green,C.cyan,C.purple,C.accent,C.dim];
+  // Proportional swatches — each language's width = its % of a 220px total
+  const SWATCH_TOTAL = 220;
   let swatchSVG=""; let sx=LEFT_X; const swatchY=H-42;
-  for (const col of swatchColors) {
-    swatchSVG += `<rect x="${sx}" y="${swatchY}" width="22" height="14" rx="2" fill="${col}"/>`;
-    sx += 25;
+  for (const { name: ln, pct } of languages) {
+    const color = LANG_COLORS[ln] || C.accent;
+    const w = Math.max(2, Math.round((pct / 100) * SWATCH_TOTAL));
+    swatchSVG += `<rect x="${sx}" y="${swatchY}" width="${w}" height="14" rx="2" fill="${color}" opacity="0.9"/>`;
+    sx += w + 2;
   }
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
