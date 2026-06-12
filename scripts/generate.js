@@ -270,6 +270,100 @@ async function fetchLatestTrack() {
   }
 }
 
+async function fetchPinnedRepos() {
+  const query = `
+    query($login: String!) {
+      user(login: $login) {
+        pinnedItems(first: 6, types: REPOSITORY) {
+          nodes {
+            ... on Repository {
+              name description stargazerCount forkCount pushedAt
+              primaryLanguage { name color }
+              repositoryTopics(first: 3) { nodes { topic { name } } }
+            }
+          }
+        }
+      }
+    }
+  `;
+  const res = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: { Authorization: `bearer ${GITHUB_TOKEN}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ query, variables: { login: USERNAME } }),
+  });
+  const json = await res.json();
+  if (json.errors) { console.error("pinnedItems errors:", json.errors); return []; }
+  return json.data.user.pinnedItems.nodes;
+}
+
+function buildPinCard(repo, theme = "dark") {
+  const isDark = theme === "dark";
+  const C = isDark ? {
+    bg:"#0d1117", bgCard:"#161b22", border:"#30363d",
+    cyan:"#79c0ff", white:"#e6edf3", dim:"#8b949e", accent:"#7c3aed",
+  } : {
+    bg:"#ffffff", bgCard:"#f6f8fa", border:"#d0d7de",
+    cyan:"#0969da", white:"#1f2328", dim:"#656d76", accent:"#7c3aed",
+  };
+
+  const MONO = "ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace";
+  const W = 370, H = 150;
+
+  const repoName = esc(repo.name);
+  const descRaw  = repo.description || "";
+  const desc     = esc(descRaw.slice(0, 52) + (descRaw.length > 52 ? "…" : ""));
+  const lang     = repo.primaryLanguage;
+  const langName = esc(lang?.name || "—");
+  const langColor = lang?.color || C.dim;
+  const stars    = repo.stargazerCount;
+  const forks    = repo.forkCount;
+  const pushed   = repo.pushedAt ? timeAgo(repo.pushedAt) : "—";
+  const topics   = (repo.repositoryTopics?.nodes || []).map(n => esc(n.topic.name)).slice(0, 3);
+  const TITLE    = `${USERNAME}/${repoName}`;
+
+  let topicsSVG = "";
+  if (topics.length > 0) {
+    let tx = 14; const ty = 120;
+    for (const t of topics) {
+      const tw = t.length * 6.5 + 14;
+      topicsSVG += `<rect x="${tx}" y="${ty-10}" width="${tw}" height="15" rx="7" fill="${C.accent}" opacity="0.12" stroke="${C.accent}" stroke-width="0.5" stroke-opacity="0.4"/>
+        <text x="${tx + tw/2}" y="${ty+1}" text-anchor="middle" font-family="${MONO}" font-size="9.5" fill="${C.accent}">${t}</text>`;
+      tx += tw + 5;
+    }
+  }
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <defs>
+    <linearGradient id="bg-p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${C.bg}"/><stop offset="100%" stop-color="${C.bgCard}"/>
+    </linearGradient>
+    <linearGradient id="brd-p" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${C.accent}" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="${C.cyan}" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="${C.accent}" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" rx="8" fill="url(#bg-p)"/>
+  <rect width="${W}" height="${H}" rx="8" fill="none" stroke="url(#brd-p)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="${W}" height="28" rx="8" fill="${C.bgCard}"/>
+  <rect x="0" y="18" width="${W}" height="10" fill="${C.bgCard}"/>
+  <rect x="0" y="27" width="${W}" height="1" fill="${C.border}"/>
+  <circle cx="14" cy="14" r="4" fill="#ff5f57"/>
+  <circle cx="26" cy="14" r="4" fill="#febc2e"/>
+  <circle cx="38" cy="14" r="4" fill="#28c840"/>
+  <text x="${W/2}" y="18" text-anchor="middle" font-family="${MONO}" font-size="10" fill="${C.dim}">${TITLE}</text>
+  <text x="14" y="50" font-family="${MONO}" font-size="15" font-weight="700" fill="${C.white}">${repoName}</text>
+  <text x="14" y="66" font-family="${MONO}" font-size="11" fill="${C.dim}">${desc || "No description"}</text>
+  <circle cx="19" cy="87" r="5" fill="${langColor}"/>
+  <text x="30" y="91" font-family="${MONO}" font-size="11" fill="${C.dim}">${langName}</text>
+  <text x="130" y="91" font-family="${MONO}" font-size="11" fill="${C.dim}">★ ${stars}</text>
+  <text x="175" y="91" font-family="${MONO}" font-size="11" fill="${C.dim}">⎇ ${forks}</text>
+  <text x="215" y="91" font-family="${MONO}" font-size="11" fill="${C.dim}">pushed ${esc(pushed)}</text>
+  ${topicsSVG}
+  <rect x="0" y="${H-4}" width="${W}" height="4" rx="0" fill="url(#brd-p)"/>
+</svg>`;
+}
+
 async function fetchLatestBlogPost() {
   try {
     const res = await fetch("https://curiositas.in/feed/", { signal: AbortSignal.timeout(5000) });
@@ -284,7 +378,9 @@ async function fetchLatestBlogPost() {
 
 async function main() {
   console.log("⏳ Fetching GitHub stats for", USERNAME);
-  const [user, latestPost, latestTrack, wakaTime] = await Promise.all([fetchGitHubStats(), fetchLatestBlogPost(), fetchLatestTrack(), fetchWakaStats()]);
+  const [user, pinnedRepos, latestPost, latestTrack, wakaTime] = await Promise.all([
+    fetchGitHubStats(), fetchPinnedRepos(), fetchLatestBlogPost(), fetchLatestTrack(), fetchWakaStats(),
+  ]);
   const repos = user.repositories.nodes;
   const cal = user.contributionsCollection.contributionCalendar;
   const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
@@ -301,19 +397,63 @@ async function main() {
     latestPost, latestTrack, wakaTime,
   };
   console.log("📊 Stats:", { stars, streak, repos: stats.repositories, topLang: languages[0] });
+
   const root = path.join(__dirname, "..");
+  const ts = Date.now();
+
+  // Main profile card (dark + light)
   fs.writeFileSync(path.join(root, "profile-card.svg"),       buildSVG(stats, "dark"),  "utf8");
   fs.writeFileSync(path.join(root, "profile-card-light.svg"), buildSVG(stats, "light"), "utf8");
   console.log("✅ Written → profile-card.svg + profile-card-light.svg");
 
+  // Pinned project mini cards
+  const pinsDir = path.join(root, "pins");
+  if (!fs.existsSync(pinsDir)) fs.mkdirSync(pinsDir);
+  const pinMeta = [];
+  for (const repo of pinnedRepos) {
+    const slug = repo.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    fs.writeFileSync(path.join(pinsDir, `${slug}.svg`),       buildPinCard(repo, "dark"),  "utf8");
+    fs.writeFileSync(path.join(pinsDir, `${slug}-light.svg`), buildPinCard(repo, "light"), "utf8");
+    pinMeta.push({ slug, name: repo.name });
+  }
+  if (pinMeta.length > 0) console.log(`✅ Written → pins/ (${pinMeta.length} repos)`);
+
+  // README: update main card cache-busters + rebuild pins section
   const readmePath = path.join(root, "README.md");
-  const readme = fs.readFileSync(readmePath, "utf8");
-  const ts = Date.now();
-  const updated = readme
-    .replace(/profile-card\.svg\?v=\d+/,       `profile-card.svg?v=${ts}`)
-    .replace(/profile-card-light\.svg\?v=\d+/,  `profile-card-light.svg?v=${ts}`);
-  fs.writeFileSync(readmePath, updated, "utf8");
-  console.log("✅ README cache-busters updated →", `?v=${ts}`);
+  let readme = fs.readFileSync(readmePath, "utf8");
+  readme = readme
+    .replace(/profile-card\.svg\?v=\d+/,      `profile-card.svg?v=${ts}`)
+    .replace(/profile-card-light\.svg\?v=\d+/, `profile-card-light.svg?v=${ts}`);
+
+  if (pinMeta.length > 0) {
+    const rows = [];
+    for (let i = 0; i < pinMeta.length; i += 2) {
+      const cells = [pinMeta[i], pinMeta[i + 1]].map(p =>
+        p
+          ? `<td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/${p.slug}.svg?v=${ts}"><img src="./pins/${p.slug}-light.svg?v=${ts}" alt="${p.name}" width="370"/></picture></td>`
+          : `<td width="50%"></td>`
+      );
+      rows.push(`<tr>${cells.join("")}</tr>`);
+    }
+    const pinsBlock = [
+      "<!-- PINS_START -->",
+      "### 📌 Pinned Projects",
+      "",
+      "<table>",
+      ...rows,
+      "</table>",
+      "<!-- PINS_END -->",
+    ].join("\n");
+
+    if (readme.includes("<!-- PINS_START -->")) {
+      readme = readme.replace(/<!-- PINS_START -->[\s\S]*?<!-- PINS_END -->/, pinsBlock);
+    } else {
+      readme = readme.replace("### 📈 GitHub Stats", pinsBlock + "\n\n### 📈 GitHub Stats");
+    }
+  }
+
+  fs.writeFileSync(readmePath, readme, "utf8");
+  console.log("✅ README updated →", `?v=${ts}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
