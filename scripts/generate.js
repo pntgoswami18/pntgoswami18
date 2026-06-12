@@ -94,7 +94,7 @@ function esc(str) {
 }
 
 function buildSVG(stats) {
-  const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars, latestPost } = stats;
+  const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars, latestPost, latestTrack } = stats;
 
   const C = {
     bg:"#0d1117", bgCard:"#161b22", border:"#30363d",
@@ -127,6 +127,7 @@ function buildSVG(stats) {
     ["streak", streak > 0 ? `${streak} days 🔥` : "0 days"],
     ["PRs merged",`${totalPRs}`], ["followers",`${followers}`],
     ["last push",lastPush],
+    ...(latestTrack ? [["♫ now",latestTrack]] : []),
     ...(latestPost ? [["blog",latestPost]] : []),
     ["",""], ["updated",now],
   ];
@@ -220,6 +221,18 @@ function buildSVG(stats) {
 </svg>`;
 }
 
+async function fetchLatestTrack() {
+  try {
+    const res = await fetch("https://feeds.soundcloud.com/users/soundcloud:users:79402984/sounds.rss", { signal: AbortSignal.timeout(5000) });
+    const xml = await res.text();
+    const title = xml.match(/<item>[\s\S]*?<title><!\[CDATA\[(.*?)\]\]><\/title>/)?.[1]
+               || xml.match(/<item>[\s\S]*?<title>(.*?)<\/title>/)?.[1];
+    return title ? title.trim().slice(0, 38) + (title.length > 38 ? "…" : "") : null;
+  } catch {
+    return null;
+  }
+}
+
 async function fetchLatestBlogPost() {
   try {
     const res = await fetch("https://curiositas.in/feed/", { signal: AbortSignal.timeout(5000) });
@@ -234,7 +247,7 @@ async function fetchLatestBlogPost() {
 
 async function main() {
   console.log("⏳ Fetching GitHub stats for", USERNAME);
-  const [user, latestPost] = await Promise.all([fetchGitHubStats(), fetchLatestBlogPost()]);
+  const [user, latestPost, latestTrack] = await Promise.all([fetchGitHubStats(), fetchLatestBlogPost(), fetchLatestTrack()]);
   const repos = user.repositories.nodes;
   const cal = user.contributionsCollection.contributionCalendar;
   const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
@@ -248,7 +261,7 @@ async function main() {
     totalCommits: user.contributionsCollection.totalCommitContributions,
     totalPRs: user.pullRequests.totalCount,
     streak, languages, lastPush: last ? timeAgo(last.pushedAt) : "unknown",
-    latestPost,
+    latestPost, latestTrack,
   };
   console.log("📊 Stats:", { stars, streak, repos: stats.repositories, topLang: languages[0] });
   const svg = buildSVG(stats);
