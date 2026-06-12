@@ -125,16 +125,6 @@ function buildSVG(stats) {
     ["last push",lastPush], ["",""], ["updated",now],
   ];
 
-  // PG logo — only solid block chars; box-drawing chars (╗╚═║) have inconsistent
-  // advance widths in SVG web fonts and produce garbled output
-  const ascii = [
-    "████  ████",
-    "█  █ █    ",
-    "████ █ ███",
-    "█    █   █",
-    "█     ████",
-  ];
-
   let rowsSVG="", y=TOP_Y;
   for (const [key,val] of rows) {
     if (!key && !val) { y += LH*0.6; continue; }
@@ -145,12 +135,18 @@ function buildSVG(stats) {
     y += LH;
   }
 
-  // ASCII art occupies y=57 to y=57+5×18=147 — rendered first so languages sit below it
-  let asciiSVG="";
-  let ay = TOP_Y + 5;
-  for (const line of ascii) {
-    asciiSVG += `<text x="${LEFT_X}" y="${ay}" font-family="${MONO}" font-size="13" fill="${C.accent}" font-weight="700">${esc(line)}</text>`;
-    ay += 18;
+  // PG pixel-art logo using SVG rects — immune to font advance-width inconsistencies
+  // Each "pixel" is a 10×10 rect, cells are 12px apart (10px + 2px gap)
+  const CELL = 12, PIX = 10;
+  const P_GRID = [[1,1,1,0],[1,0,1,0],[1,1,1,0],[1,0,0,0],[1,0,0,0]];
+  const G_GRID = [[0,1,1,1],[1,0,0,0],[1,0,1,1],[1,0,0,1],[0,1,1,0]];
+  let asciiSVG = "";
+  const logoY = TOP_Y + 8;
+  for (let r = 0; r < 5; r++) {
+    for (let c = 0; c < 4; c++) {
+      if (P_GRID[r][c]) asciiSVG += `<rect x="${LEFT_X + c*CELL}" y="${logoY + r*CELL}" width="${PIX}" height="${PIX}" rx="2" fill="${C.accent}"/>`;
+      if (G_GRID[r][c]) asciiSVG += `<rect x="${LEFT_X + (c+5)*CELL}" y="${logoY + r*CELL}" width="${PIX}" height="${PIX}" rx="2" fill="${C.cyan}"/>`;
+    }
   }
 
   // Languages section starts at y=162 (below ASCII art which ends ~y=147)
