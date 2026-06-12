@@ -113,6 +113,7 @@ function buildSVG(stats) {
   // ui-monospace resolves to SF Mono (macOS) / Cascadia Code (Windows) — both always
   // available on GitHub's rendering pipeline. The Google Fonts @import is a no-op
   // inside <img> SVGs because browsers block external resource loads there.
+  const DSEG14_B64 = "d09GMgABAAAAAAKQAAwAAAAABVwAAAJCAAB1wgAAAAAAAAAAAAAAAAAAAAAAAAAABmAAPAgEEQgKgmCCQAE2AiQDCgsIAAQgBYNWByAbYQQgLgpjY5n0YSxGc6E9y1N9QcTD/+/3bZ/7dAb3ZhrNqkryRDKLmsjMbwOJUFikn7EsZpU7OLebN8iDdHHwKiJJTBpUEiVb6LRISyC+Fksr6e4alJ069TwTcw+SNSjoERmbx6Lgolh4dWGrFagWNNVquVukxlVvRF1xrr3+FXWFsnDHU6VNj3QX12AvXloQCGRwVQFBBi5uOLh2v5/1isVH7OqA0F1LoKkLCQVGQgUox0wHqYuQSNqcAdt8J6cqTEtXEMiZLS+gxkCcBbkCKAG1ejBDMzQtsAxD0+elS4IxQp83QDGaNUja0CsdjhmAiJtC0Zo+UN48YGE0shdVNoLsmVmwDjyQL+8sxw7QZqfQPiqmPyMxzv3wQO90dNr3bzE83Uc139vNqEGNm9/7/mykey6NfN6/ekLf9+sjD+a5zr7oXzyh8+OlfO9MWPz0wZGapprzPy7N8E70FcPCKLKDeTnl6ntTq4e+nSL6Mgg41t1x6fet9pAl/9oB6B8eTb8Dj6+/lbuk+8VHtBIIHtifH4Dn7sA3+DpSLLgKU18fjMJpAkgIgRV0EGjsgoqShriIy4eJbnwy2A2+sN+LL80Oga+MjfC7azOjLGJnqOtgaADouQIyhvYmpua6VhgnTB1MAHFrKwd4+87YEGDTmQDRxMHBRpjBMArHRv+7bm9EtzJ0IImqiEmweAERC117e1N9ZUNjRwtdu6OPDwNkuzSxk7oWH41nAjZzdTRN3dBu27raOcCk8/KXOS1EmVZmIQA=";
   const W=760, H=380, MONO="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace", LH=19, FONT=13;
   const LEFT_X=28, RIGHT_X=295, TOP_Y=52;
   const now = new Date().toUTCString().replace("GMT", "UTC");
@@ -145,10 +146,10 @@ function buildSVG(stats) {
   //    SVG filters work fine in <img> SVGs (only JS/external resources are blocked).
   //
   // Baseline y=141 → cap-top ≈ y=84, descenders ≈ y=157 → 5px gap before LANGUAGES at y=162 ✓
-  const LOGO_OPTS = `font-family="${MONO}" font-size="80" font-weight="700" letter-spacing="6"`;
+  const LOGO_OPTS = `font-family="DSEG14,${MONO}" font-size="72" font-weight="700" letter-spacing="4"`;
   const asciiSVG = `
-    <text x="${LEFT_X+6}" y="${TOP_Y+95}" ${LOGO_OPTS} fill="#4a1a8c" opacity="0.9">PG</text>
-    <text x="${LEFT_X}"   y="${TOP_Y+89}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.95" filter="url(#glow)">PG</text>`;
+    <text x="${LEFT_X+5}" y="${TOP_Y+93}" ${LOGO_OPTS} fill="#4a1a8c" opacity="0.9">PG</text>
+    <text x="${LEFT_X}"   y="${TOP_Y+88}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.95" filter="url(#glow)">PG</text>`;
 
   // Languages section starts at y=162 (below ASCII art which ends ~y=147)
   // Bar layout (left panel is 28→265px, divider at 273):
@@ -184,6 +185,7 @@ function buildSVG(stats) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>
+    <style>@font-face{font-family:'DSEG14';src:url('data:font/woff2;base64,${DSEG14_B64}') format('woff2');font-display:block;}</style>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
