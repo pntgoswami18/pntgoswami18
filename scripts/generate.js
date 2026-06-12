@@ -110,7 +110,10 @@ function buildSVG(stats) {
   };
 
   // H=380 gives enough vertical room for ASCII (90px) + languages (105px) + padding
-  const W=760, H=380, MONO="'JetBrains Mono','Fira Code',monospace", LH=19, FONT=13;
+  // ui-monospace resolves to SF Mono (macOS) / Cascadia Code (Windows) — both always
+  // available on GitHub's rendering pipeline. The Google Fonts @import is a no-op
+  // inside <img> SVGs because browsers block external resource loads there.
+  const W=760, H=380, MONO="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace", LH=19, FONT=13;
   const LEFT_X=28, RIGHT_X=295, TOP_Y=52;
   const now = new Date().toUTCString().replace("GMT", "UTC");
 
@@ -181,8 +184,7 @@ function buildSVG(stats) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>
-    <style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;display=swap');</style>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
     <linearGradient id="border-grad" x1="0" y1="0" x2="1" y2="0">
