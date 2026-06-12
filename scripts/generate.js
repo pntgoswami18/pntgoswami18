@@ -135,19 +135,21 @@ function buildSVG(stats) {
     y += LH;
   }
 
-  // PG pixel-art logo using SVG rects — immune to font advance-width inconsistencies
-  // Each "pixel" is a 10×10 rect, cells are 12px apart (10px + 2px gap)
-  const CELL = 12, PIX = 10;
-  const P_GRID = [[1,1,1,0],[1,0,1,0],[1,1,1,0],[1,0,0,0],[1,0,0,0]];
-  const G_GRID = [[0,1,1,1],[1,0,0,0],[1,0,1,1],[1,0,0,1],[0,1,1,0]];
-  let asciiSVG = "";
-  const logoY = TOP_Y + 8;
-  for (let r = 0; r < 5; r++) {
-    for (let c = 0; c < 4; c++) {
-      if (P_GRID[r][c]) asciiSVG += `<rect x="${LEFT_X + c*CELL}" y="${logoY + r*CELL}" width="${PIX}" height="${PIX}" rx="2" fill="${C.accent}"/>`;
-      if (G_GRID[r][c]) asciiSVG += `<rect x="${LEFT_X + (c+5)*CELL}" y="${logoY + r*CELL}" width="${PIX}" height="${PIX}" rx="2" fill="${C.cyan}"/>`;
-    }
-  }
+  // Stylised "PG" monogram — three layers create a drop shadow + glow look
+  // using only basic SVG text attributes. GitHub's Camo proxy strips <filter>
+  // elements entirely, so feGaussianBlur / feDropShadow never render there;
+  // offset-layer stacking is the only reliable technique.
+  //
+  // Layer 1 (deepest shadow): dark purple, offset +4 +4, 55% opacity
+  // Layer 2 (soft glow halo): accent colour, offset +2 +2, 28% opacity
+  // Layer 3 (main text):      accent colour, no offset, 95% opacity
+  //
+  // Baseline y=141 → cap-top ≈ y=84, descenders ≈ y=157 → 5px gap before LANGUAGES at y=162 ✓
+  const LOGO_OPTS = `font-family="${MONO}" font-size="80" font-weight="700" letter-spacing="6"`;
+  const asciiSVG = `
+    <text x="${LEFT_X+4}" y="${TOP_Y+93}" ${LOGO_OPTS} fill="#1a0840" opacity="0.55">PG</text>
+    <text x="${LEFT_X+2}" y="${TOP_Y+91}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.28">PG</text>
+    <text x="${LEFT_X}"   y="${TOP_Y+89}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.95">PG</text>`;
 
   // Languages section starts at y=162 (below ASCII art which ends ~y=147)
   // Bar layout (left panel is 28→265px, divider at 273):
