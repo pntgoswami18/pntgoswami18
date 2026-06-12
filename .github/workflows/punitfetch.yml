@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "punitfetch-bot"
-          git add profile-card.svg README.md
+          git add profile-card.svg profile-card-light.svg README.md
           git diff --staged --quiet || git commit -m "chore: 🤖 refresh punitfetch card [skip ci]"
           git pull --rebase origin main
           git push

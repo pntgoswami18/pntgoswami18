@@ -93,14 +93,20 @@ function esc(str) {
   return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 }
 
-function buildSVG(stats) {
+function buildSVG(stats, theme = "dark") {
   const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars, latestPost, latestTrack, wakaTime } = stats;
+  const isDark = theme === "dark";
 
-  const C = {
+  const C = isDark ? {
     bg:"#0d1117", bgCard:"#161b22", border:"#30363d",
     green:"#3fb950", purple:"#c678dd", cyan:"#79c0ff",
     yellow:"#e3b341", orange:"#f0883e", red:"#ff7b72",
     white:"#e6edf3", dim:"#8b949e", accent:"#7c3aed",
+  } : {
+    bg:"#ffffff", bgCard:"#f6f8fa", border:"#d0d7de",
+    green:"#1a7f37", purple:"#8250df", cyan:"#0969da",
+    yellow:"#9a6700", orange:"#bc4c00", red:"#d1242f",
+    white:"#1f2328", dim:"#656d76", accent:"#7c3aed",
   };
 
   const LANG_COLORS = {
@@ -151,8 +157,9 @@ function buildSVG(stats) {
   //
   // Baseline y=141 → cap-top ≈ y=84, descenders ≈ y=157 → 5px gap before LANGUAGES at y=162 ✓
   const LOGO_OPTS = `font-family="DSEG14,${MONO}" font-size="72" font-weight="700" letter-spacing="4"`;
+  const pgShadow  = isDark ? "#4a1a8c" : "#c4a3ff";
   const asciiSVG = `
-    <text x="${LEFT_X+5}" y="${TOP_Y+93}" ${LOGO_OPTS} fill="#4a1a8c" opacity="0.9">PG</text>
+    <text x="${LEFT_X+5}" y="${TOP_Y+93}" ${LOGO_OPTS} fill="${pgShadow}" opacity="0.9">PG</text>
     <text x="${LEFT_X}"   y="${TOP_Y+88}" ${LOGO_OPTS} fill="${C.accent}" opacity="0.95" filter="url(#glow)">PG</text>`;
 
   // Languages section starts at y=162 (below ASCII art which ends ~y=147)
@@ -172,7 +179,7 @@ function buildSVG(stats) {
     const empty  = BAR_LEN - filled;
     langSVG += `
       <text x="${LEFT_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${C.dim}">${esc(pad(ln, 10))}</text>
-      <text x="${BAR_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${color}">${"█".repeat(filled)}<tspan fill="#2d333b">${"░".repeat(empty)}</tspan></text>
+      <text x="${BAR_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${color}">${"█".repeat(filled)}<tspan fill="${isDark ? "#2d333b" : "#d0d7de"}">${"░".repeat(empty)}</tspan></text>
       <text x="${PCT_X}" y="${langY}" font-family="${MONO}" font-size="12" fill="${C.yellow}">${String(pct).padStart(3)}%</text>`;
     langY += 21;
   }
@@ -190,8 +197,8 @@ function buildSVG(stats) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>
     <style>@font-face{font-family:'DSEG14';src:url('data:font/woff2;base64,${DSEG14_B64}') format('woff2');font-display:block;}</style>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#161b22"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${C.bg}"/><stop offset="100%" stop-color="${C.bgCard}"/>
     </linearGradient>
     <linearGradient id="border-grad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="${C.accent}" stop-opacity="0.8"/>
@@ -199,7 +206,7 @@ function buildSVG(stats) {
       <stop offset="100%" stop-color="${C.accent}" stop-opacity="0.2"/>
     </linearGradient>
     <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feGaussianBlur stdDeviation="${isDark ? 5 : 3}" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
@@ -294,22 +301,19 @@ async function main() {
     latestPost, latestTrack, wakaTime,
   };
   console.log("📊 Stats:", { stars, streak, repos: stats.repositories, topLang: languages[0] });
-  const svg = buildSVG(stats);
-  const outPath = path.join(__dirname, "..", "profile-card.svg");
-  fs.writeFileSync(outPath, svg, "utf8");
-  console.log("✅ Written →", outPath);
+  const root = path.join(__dirname, "..");
+  fs.writeFileSync(path.join(root, "profile-card.svg"),       buildSVG(stats, "dark"),  "utf8");
+  fs.writeFileSync(path.join(root, "profile-card-light.svg"), buildSVG(stats, "light"), "utf8");
+  console.log("✅ Written → profile-card.svg + profile-card-light.svg");
 
-  // Bump the cache-buster in README so Camo fetches a fresh copy every run.
-  // Camo keys on the full URL — only a URL change forces re-fetch.
-  const readmePath = path.join(__dirname, "..", "README.md");
+  const readmePath = path.join(root, "README.md");
   const readme = fs.readFileSync(readmePath, "utf8");
   const ts = Date.now();
-  const updated = readme.replace(
-    /!\[punitfetch\]\(\.\/profile-card\.svg[^)]*\)/,
-    `![punitfetch](./profile-card.svg?v=${ts})`
-  );
+  const updated = readme
+    .replace(/profile-card\.svg\?v=\d+/,       `profile-card.svg?v=${ts}`)
+    .replace(/profile-card-light\.svg\?v=\d+/,  `profile-card-light.svg?v=${ts}`);
   fs.writeFileSync(readmePath, updated, "utf8");
-  console.log("✅ README cache-buster updated →", `?v=${ts}`);
+  console.log("✅ README cache-busters updated →", `?v=${ts}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
