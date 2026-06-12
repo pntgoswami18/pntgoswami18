@@ -94,7 +94,7 @@ function esc(str) {
 }
 
 function buildSVG(stats) {
-  const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars } = stats;
+  const { name, login, followers, repositories, streak, totalCommits, totalPRs, languages, lastPush, stars, latestPost } = stats;
 
   const C = {
     bg:"#0d1117", bgCard:"#161b22", border:"#30363d",
@@ -126,7 +126,9 @@ function buildSVG(stats) {
     ["commits",`${totalCommits.toLocaleString()} this year`],
     ["streak", streak > 0 ? `${streak} days 🔥` : "0 days"],
     ["PRs merged",`${totalPRs}`], ["followers",`${followers}`],
-    ["last push",lastPush], ["",""], ["updated",now],
+    ["last push",lastPush],
+    ...(latestPost ? [["blog",latestPost]] : []),
+    ["",""], ["updated",now],
   ];
 
   let rowsSVG="", y=TOP_Y;
@@ -218,9 +220,21 @@ function buildSVG(stats) {
 </svg>`;
 }
 
+async function fetchLatestBlogPost() {
+  try {
+    const res = await fetch("https://curiositas.in/feed/", { signal: AbortSignal.timeout(5000) });
+    const xml = await res.text();
+    const title = xml.match(/<item>[\s\S]*?<title><!\[CDATA\[(.*?)\]\]><\/title>/)?.[1]
+               || xml.match(/<item>[\s\S]*?<title>(.*?)<\/title>/)?.[1];
+    return title ? title.trim().slice(0, 38) + (title.length > 38 ? "…" : "") : null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   console.log("⏳ Fetching GitHub stats for", USERNAME);
-  const user = await fetchGitHubStats();
+  const [user, latestPost] = await Promise.all([fetchGitHubStats(), fetchLatestBlogPost()]);
   const repos = user.repositories.nodes;
   const cal = user.contributionsCollection.contributionCalendar;
   const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
@@ -234,6 +248,7 @@ async function main() {
     totalCommits: user.contributionsCollection.totalCommitContributions,
     totalPRs: user.pullRequests.totalCount,
     streak, languages, lastPush: last ? timeAgo(last.pushedAt) : "unknown",
+    latestPost,
   };
   console.log("📊 Stats:", { stars, streak, repos: stats.repositories, topLang: languages[0] });
   const svg = buildSVG(stats);
