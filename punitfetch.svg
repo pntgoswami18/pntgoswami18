@@ -67,7 +67,7 @@
       <text x="420" y="207.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">378 this year</text>
       <text x="295" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">streak</text>
       <text x="410" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">7 days 🔥</text>
+      <text x="420" y="226.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">0 days</text>
       <text x="295" y="245.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">PRs merged</text>
       <text x="410" y="245.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="245.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">28</text>
@@ -76,10 +76,10 @@
       <text x="420" y="264.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">0</text>
       <text x="295" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">last push</text>
       <text x="410" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">4h ago</text>
+      <text x="420" y="283.8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">6h ago</text>
       <text x="295" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
       <text x="410" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Thu, 11 Jun 2026 20:09:09</text>
+      <text x="420" y="314.2" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 02:31:17</text>
   <rect x="28" y="298" width="22" height="14" rx="2" fill="#ff7b72"/><rect x="53" y="298" width="22" height="14" rx="2" fill="#f0883e"/><rect x="78" y="298" width="22" height="14" rx="2" fill="#e3b341"/><rect x="103" y="298" width="22" height="14" rx="2" fill="#3fb950"/><rect x="128" y="298" width="22" height="14" rx="2" fill="#79c0ff"/><rect x="153" y="298" width="22" height="14" rx="2" fill="#c678dd"/><rect x="178" y="298" width="22" height="14" rx="2" fill="#7c3aed"/><rect x="203" y="298" width="22" height="14" rx="2" fill="#8b949e"/>
   <text x="234" y="309" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10" fill="#8b949e">■ lang spread</text>
   <rect x="0" y="336" width="760" height="4" rx="0" fill="url(#border-grad)"/>
