@@ -114,7 +114,7 @@ function buildSVG(stats) {
   // available on GitHub's rendering pipeline. The Google Fonts @import is a no-op
   // inside <img> SVGs because browsers block external resource loads there.
   const DSEG14_B64 = "d09GMgABAAAAAAKQAAwAAAAABVwAAAJCAAB1wgAAAAAAAAAAAAAAAAAAAAAAAAAABmAAPAgEEQgKgmCCQAE2AiQDCgsIAAQgBYNWByAbYQQgLgpjY5n0YSxGc6E9y1N9QcTD/+/3bZ/7dAb3ZhrNqkryRDKLmsjMbwOJUFikn7EsZpU7OLebN8iDdHHwKiJJTBpUEiVb6LRISyC+Fksr6e4alJ069TwTcw+SNSjoERmbx6Lgolh4dWGrFagWNNVquVukxlVvRF1xrr3+FXWFsnDHU6VNj3QX12AvXloQCGRwVQFBBi5uOLh2v5/1isVH7OqA0F1LoKkLCQVGQgUox0wHqYuQSNqcAdt8J6cqTEtXEMiZLS+gxkCcBbkCKAG1ejBDMzQtsAxD0+elS4IxQp83QDGaNUja0CsdjhmAiJtC0Zo+UN48YGE0shdVNoLsmVmwDjyQL+8sxw7QZqfQPiqmPyMxzv3wQO90dNr3bzE83Uc139vNqEGNm9/7/mykey6NfN6/ekLf9+sjD+a5zr7oXzyh8+OlfO9MWPz0wZGapprzPy7N8E70FcPCKLKDeTnl6ntTq4e+nSL6Mgg41t1x6fet9pAl/9oB6B8eTb8Dj6+/lbuk+8VHtBIIHtifH4Dn7sA3+DpSLLgKU18fjMJpAkgIgRV0EGjsgoqShriIy4eJbnwy2A2+sN+LL80Oga+MjfC7azOjLGJnqOtgaADouQIyhvYmpua6VhgnTB1MAHFrKwd4+87YEGDTmQDRxMHBRpjBMArHRv+7bm9EtzJ0IImqiEmweAERC117e1N9ZUNjRwtdu6OPDwNkuzSxk7oWH41nAjZzdTRN3dBu27raOcCk8/KXOS1EmVZmIQA=";
-  const W=760, H=380, MONO="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace", LH=19, FONT=13;
+  const W=760, H=420, MONO="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace", LH=19, FONT=13;
   const LEFT_X=28, RIGHT_X=295, TOP_Y=52;
   const now = new Date().toUTCString().replace("GMT", "UTC");
 
@@ -223,10 +223,14 @@ function buildSVG(stats) {
 
 async function fetchLatestTrack() {
   try {
-    const res = await fetch("https://feeds.soundcloud.com/users/soundcloud:users:79402984/sounds.rss", { signal: AbortSignal.timeout(5000) });
-    const xml = await res.text();
-    const title = xml.match(/<item>[\s\S]*?<title><!\[CDATA\[(.*?)\]\]><\/title>/)?.[1]
-               || xml.match(/<item>[\s\S]*?<title>(.*?)<\/title>/)?.[1];
+    const SC_CLIENT_ID = "QNR5nrdLOvApYERC8AOUr3VjRfHnLjle";
+    const SC_USER_ID   = "79402984";
+    const res = await fetch(
+      `https://api-v2.soundcloud.com/users/${SC_USER_ID}/tracks?limit=1&client_id=${SC_CLIENT_ID}`,
+      { signal: AbortSignal.timeout(5000) }
+    );
+    const json = await res.json();
+    const title = json?.collection?.[0]?.title;
     return title ? title.trim().slice(0, 38) + (title.length > 38 ? "…" : "") : null;
   } catch {
     return null;

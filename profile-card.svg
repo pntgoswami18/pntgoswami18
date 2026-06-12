@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
   <defs>
     <style>@font-face{font-family:'DSEG14';src:url('data:font/woff2;base64,d09GMgABAAAAAAKQAAwAAAAABVwAAAJCAAB1wgAAAAAAAAAAAAAAAAAAAAAAAAAABmAAPAgEEQgKgmCCQAE2AiQDCgsIAAQgBYNWByAbYQQgLgpjY5n0YSxGc6E9y1N9QcTD/+/3bZ/7dAb3ZhrNqkryRDKLmsjMbwOJUFikn7EsZpU7OLebN8iDdHHwKiJJTBpUEiVb6LRISyC+Fksr6e4alJ069TwTcw+SNSjoERmbx6Lgolh4dWGrFagWNNVquVukxlVvRF1xrr3+FXWFsnDHU6VNj3QX12AvXloQCGRwVQFBBi5uOLh2v5/1isVH7OqA0F1LoKkLCQVGQgUox0wHqYuQSNqcAdt8J6cqTEtXEMiZLS+gxkCcBbkCKAG1ejBDMzQtsAxD0+elS4IxQp83QDGaNUja0CsdjhmAiJtC0Zo+UN48YGE0shdVNoLsmVmwDjyQL+8sxw7QZqfQPiqmPyMxzv3wQO90dNr3bzE83Uc139vNqEGNm9/7/mykey6NfN6/ekLf9+sjD+a5zr7oXzyh8+OlfO9MWPz0wZGapprzPy7N8E70FcPCKLKDeTnl6ntTq4e+nSL6Mgg41t1x6fet9pAl/9oB6B8eTb8Dj6+/lbuk+8VHtBIIHtifH4Dn7sA3+DpSLLgKU18fjMJpAkgIgRV0EGjsgoqShriIy4eJbnwy2A2+sN+LL80Oga+MjfC7azOjLGJnqOtgaADouQIyhvYmpua6VhgnTB1MAHFrKwd4+87YEGDTmQDRxMHBRpjBMArHRv+7bm9EtzJ0IImqiEmweAERC117e1N9ZUNjRwtdu6OPDwNkuzSxk7oWH41nAjZzdTRN3dBu27raOcCk8/KXOS1EmVZmIQA=') format('woff2');font-display:block;}</style>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -14,8 +14,8 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="760" height="380" rx="10" fill="url(#bg)"/>
-  <rect width="760" height="380" rx="10" fill="none" stroke="url(#border-grad)" stroke-width="1.5"/>
+  <rect width="760" height="420" rx="10" fill="url(#bg)"/>
+  <rect width="760" height="420" rx="10" fill="none" stroke="url(#border-grad)" stroke-width="1.5"/>
   <rect x="0" y="0" width="760" height="34" rx="10" fill="#161b22"/>
   <rect x="0" y="24" width="760" height="10" fill="#161b22"/>
   <rect x="0" y="24" width="760" height="1" fill="#30363d"/>
@@ -23,7 +23,7 @@
   <circle cx="36" cy="17" r="5" fill="#febc2e"/>
   <circle cx="52" cy="17" r="5" fill="#28c840"/>
   <text x="380" y="22" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#8b949e">punitfetch — pntgoswami18@github</text>
-  <line x1="273" y1="42" x2="273" y2="328" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="273" y1="42" x2="273" y2="368" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
   
     <text x="33" y="145" font-family="DSEG14,ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="72" font-weight="700" letter-spacing="4" fill="#4a1a8c" opacity="0.9">PG</text>
     <text x="28"   y="140" font-family="DSEG14,ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="72" font-weight="700" letter-spacing="4" fill="#7c3aed" opacity="0.95" filter="url(#glow)">PG</text>
@@ -67,7 +67,7 @@
       <text x="420" y="188.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">1 ★</text>
       <text x="295" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">commits</text>
       <text x="410" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">409 this year</text>
+      <text x="420" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">410 this year</text>
       <text x="295" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">streak</text>
       <text x="410" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">8 days 🔥</text>
@@ -79,14 +79,17 @@
       <text x="420" y="264.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">0</text>
       <text x="295" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">last push</text>
       <text x="410" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">26m ago</text>
-      <text x="295" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">blog</text>
+      <text x="420" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">32m ago</text>
+      <text x="295" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">♫ now</text>
       <text x="410" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Enhancing CI/CD: A Deep Dive into Buil…</text>
-      <text x="295" y="333.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
-      <text x="410" y="333.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="333.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 06:46:26 UTC</text>
-  <rect x="28" y="338" width="97" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="127" y="338" width="48" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="177" y="338" width="46" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="225" y="338" width="15" height="14" rx="2" fill="#e34c26" opacity="0.9"/><rect x="242" y="338" width="13" height="14" rx="2" fill="#3572A5" opacity="0.9"/>
-  <text x="263" y="349" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#8b949e">■ lang spread</text>
-  <rect x="0" y="376" width="760" height="4" rx="0" fill="url(#border-grad)"/>
+      <text x="420" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Trap Control</text>
+      <text x="295" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">blog</text>
+      <text x="410" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Enhancing CI/CD: A Deep Dive into Buil…</text>
+      <text x="295" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
+      <text x="410" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Fri, 12 Jun 2026 06:52:15 UTC</text>
+  <rect x="28" y="378" width="97" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="127" y="378" width="48" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="177" y="378" width="46" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="225" y="378" width="15" height="14" rx="2" fill="#e34c26" opacity="0.9"/><rect x="242" y="378" width="13" height="14" rx="2" fill="#3572A5" opacity="0.9"/>
+  <text x="263" y="389" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#8b949e">■ lang spread</text>
+  <rect x="0" y="416" width="760" height="4" rx="0" fill="url(#border-grad)"/>
 </svg>
