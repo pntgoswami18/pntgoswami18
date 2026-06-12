@@ -22,7 +22,7 @@ async function fetchGitHubStats() {
         repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
           totalCount
           nodes {
-            stargazerCount pushedAt
+            name stargazerCount pushedAt
             languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
               edges { size node { name color } }
             }
@@ -68,7 +68,9 @@ function aggregateLanguages(repos) {
 }
 
 function latestRepo(repos) {
-  return repos.filter(r => r.pushedAt).sort((a, b) => new Date(b.pushedAt) - new Date(a.pushedAt))[0];
+  return repos
+    .filter(r => r.pushedAt && r.name !== USERNAME)
+    .sort((a, b) => new Date(b.pushedAt) - new Date(a.pushedAt))[0];
 }
 
 function timeAgo(dateStr) {
