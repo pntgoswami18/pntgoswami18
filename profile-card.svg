@@ -79,7 +79,7 @@
       <text x="420" y="264.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">1</text>
       <text x="295" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">last push</text>
       <text x="410" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">22h ago</text>
+      <text x="420" y="283.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">1d ago</text>
       <text x="295" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">waka/wk</text>
       <text x="410" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">19h 20m this week</text>
@@ -91,7 +91,7 @@
       <text x="420" y="340.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Enhancing CI/CD: A Deep Dive into Buil…</text>
       <text x="295" y="371.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
       <text x="410" y="371.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="371.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Mon, 15 Jun 2026 16:54:38 UTC</text>
+      <text x="420" y="371.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Mon, 15 Jun 2026 20:44:08 UTC</text>
   <rect x="28" y="378" width="112" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="142" y="378" width="55" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="199" y="378" width="24" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="225" y="378" width="18" height="14" rx="2" fill="#3572A5" opacity="0.9"/><rect x="245" y="378" width="11" height="14" rx="2" fill="#7c3aed" opacity="0.9"/>
   <text x="264" y="389" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#8b949e">■ lang spread</text>
   <rect x="0" y="416" width="760" height="4" rx="0" fill="url(#border-grad)"/>
