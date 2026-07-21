@@ -70,7 +70,7 @@
       <text x="420" y="207.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">627 this year</text>
       <text x="295" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">streak</text>
       <text x="410" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">1 days 🔥</text>
+      <text x="420" y="226.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">0 days</text>
       <text x="295" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">PRs merged</text>
       <text x="410" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="245.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">101</text>
@@ -83,12 +83,9 @@
       <text x="295" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">♫ now</text>
       <text x="410" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
       <text x="420" y="302.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Trap Control</text>
-      <text x="295" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">blog</text>
-      <text x="410" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="321.8" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Enhancing CI/CD: A Deep Dive into Buil…</text>
-      <text x="295" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
-      <text x="410" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
-      <text x="420" y="352.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Mon, 20 Jul 2026 19:23:36 UTC</text>
+      <text x="295" y="333.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#79c0ff" font-weight="600">updated</text>
+      <text x="410" y="333.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#8b949e">: </text>
+      <text x="420" y="333.2" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#e6edf3">Tue, 21 Jul 2026 01:29:17 UTC</text>
   <rect x="28" y="378" width="106" height="14" rx="2" fill="#f1e05a" opacity="0.9"/><rect x="136" y="378" width="51" height="14" rx="2" fill="#3178c6" opacity="0.9"/><rect x="189" y="378" width="44" height="14" rx="2" fill="#A97BFF" opacity="0.9"/><rect x="235" y="378" width="13" height="14" rx="2" fill="#3572A5" opacity="0.9"/><rect x="250" y="378" width="7" height="14" rx="2" fill="#7c3aed" opacity="0.9"/>
   <text x="265" y="389" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#8b949e">■ lang spread</text>
   <rect x="0" y="416" width="760" height="4" rx="0" fill="url(#border-grad)"/>
