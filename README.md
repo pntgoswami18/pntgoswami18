@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1785092101531">
-  <img alt="punitfetch" src="./profile-card-light.svg?v=1785092101531">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1785117157594">
+  <img alt="punitfetch" src="./profile-card-light.svg?v=1785117157594">
 </picture>
 
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
@@ -91,9 +91,9 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 ### 📌 Pinned Projects
 
 <table>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1785092101531"><img src="./pins/wifipythonutils-light.svg?v=1785092101531" alt="wifiPythonUtils" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1785092101531"><img src="./pins/gmgmt-light.svg?v=1785092101531" alt="gmgmt" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1785092101531"><img src="./pins/python-bugspots-light.svg?v=1785092101531" alt="python-bugspots" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1785092101531"><img src="./pins/browser-tools-mcp-light.svg?v=1785092101531" alt="browser-tools-mcp" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1785092101531"><img src="./pins/popcorn-desktop-light.svg?v=1785092101531" alt="popcorn-desktop" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1785092101531"><img src="./pins/popcorn-time-android-light.svg?v=1785092101531" alt="popcorn-time-android" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1785117157594"><img src="./pins/wifipythonutils-light.svg?v=1785117157594" alt="wifiPythonUtils" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1785117157594"><img src="./pins/gmgmt-light.svg?v=1785117157594" alt="gmgmt" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1785117157594"><img src="./pins/python-bugspots-light.svg?v=1785117157594" alt="python-bugspots" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1785117157594"><img src="./pins/browser-tools-mcp-light.svg?v=1785117157594" alt="browser-tools-mcp" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1785117157594"><img src="./pins/popcorn-desktop-light.svg?v=1785117157594" alt="popcorn-desktop" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1785117157594"><img src="./pins/popcorn-time-android-light.svg?v=1785117157594" alt="popcorn-time-android" width="370"/></picture></td></tr>
 </table>
 <!-- PINS_END -->
 
