@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1786430712379">
-  <img alt="punitfetch" src="./profile-card-light.svg?v=1786430712379">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-card.svg?v=1786451946536">
+  <img alt="punitfetch" src="./profile-card-light.svg?v=1786451946536">
 </picture>
 
 ## नमस्ते (Namaste)🙏🏻, I'm Punit Goswami! 
@@ -90,10 +90,10 @@ _**I love connecting with different people**, so if you want to say **hi, I'll b
 <!-- PINS_START -->
 ### 📌 Pinned Projects
 
-<table role="presentation">
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1786430712379"><img src="./pins/wifipythonutils-light.svg?v=1786430712379" alt="wifiPythonUtils — Python, RSSI beacon-strength utils, 1 star, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1786430712379"><img src="./pins/gmgmt-light.svg?v=1786430712379" alt="gmgmt — JavaScript, gym management software, 0 stars, 1 fork" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1786430712379"><img src="./pins/python-bugspots-light.svg?v=1786430712379" alt="python-bugspots — Python, bug-prediction implementation, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1786430712379"><img src="./pins/browser-tools-mcp-light.svg?v=1786430712379" alt="browser-tools-mcp — JavaScript, browser-log monitor for Cursor and other editors, 0 stars, 0 forks" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1786430712379"><img src="./pins/popcorn-desktop-light.svg?v=1786430712379" alt="popcorn-desktop — JavaScript, multi-platform BitTorrent streaming client, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1786430712379"><img src="./pins/popcorn-time-android-light.svg?v=1786430712379" alt="popcorn-time-android — Kotlin, native torrent streaming for Android, 0 stars, 1 fork" width="370"/></picture></td></tr>
+<table>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1786451946536"><img src="./pins/wifipythonutils-light.svg?v=1786451946536" alt="wifiPythonUtils" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1786451946536"><img src="./pins/gmgmt-light.svg?v=1786451946536" alt="gmgmt" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1786451946536"><img src="./pins/python-bugspots-light.svg?v=1786451946536" alt="python-bugspots" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1786451946536"><img src="./pins/browser-tools-mcp-light.svg?v=1786451946536" alt="browser-tools-mcp" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1786451946536"><img src="./pins/popcorn-desktop-light.svg?v=1786451946536" alt="popcorn-desktop" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1786451946536"><img src="./pins/popcorn-time-android-light.svg?v=1786451946536" alt="popcorn-time-android" width="370"/></picture></td></tr>
 </table>
 <!-- PINS_END -->
 
