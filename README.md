@@ -18,7 +18,7 @@ I'm a software enthusiast with a passion for testing frameworks, automation, and
 ### 🙋‍♂️ About Me
 
 - 🔭 I'm passionate about building robust automation frameworks and exploring the world of NLP.
-- 🌱 I'm currently learning to play the guitar 🎸 and video editing 🎬.
+- 🌱 I'm currently learning guitar 🎸 and video editing 🎬.
 - 👯 I'm looking to collaborate on open-source testing tools and NLP projects.
 - 💬 Ask me about Maestro, Appium, CI/CD pipelines, or anything related to test automation.
 - 📫 How to reach me: [pntgoswami18@gmail.com](mailto:pntgoswami18@gmail.com)
@@ -56,16 +56,16 @@ const punit = {
             aws: ["EC2", "S3", "Lambda", "RDS"]
         }
     },
-    currentFocus: "Leading quality engineering initiatives and test automation",
+    currentFocus: "Leading quality engineering initiatives and test automation efforts",
     funFact: "I can find bugs faster with a cup of coffee in hand! ☕"
 };
 ```
 
-_**I love connecting with different people** so if you want to say **hi, I'll be happy to meet you more!** 😊_
+_**I love connecting with different people**, so if you want to say **hi, I'll be happy to chat!** 😊_
 
 ---
 
-### 🚀 Some Tools I Have Used and Learned
+### 🚀 Some Tools I've Used and Picked Up
 
 <p align="left">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="45" height="45"/>
@@ -92,7 +92,7 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 
 <table role="presentation">
 <tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1786430712379"><img src="./pins/wifipythonutils-light.svg?v=1786430712379" alt="wifiPythonUtils — Python, RSSI beacon-strength utils, 1 star, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1786430712379"><img src="./pins/gmgmt-light.svg?v=1786430712379" alt="gmgmt — JavaScript, gym management software, 0 stars, 1 fork" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1786430712379"><img src="./pins/python-bugspots-light.svg?v=1786430712379" alt="python-bugspots — Python, bug-prediction implementation, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1786430712379"><img src="./pins/browser-tools-mcp-light.svg?v=1786430712379" alt="browser-tools-mcp — JavaScript, monitor browser logs from Cursor and other editors, 0 stars, 0 forks" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1786430712379"><img src="./pins/python-bugspots-light.svg?v=1786430712379" alt="python-bugspots — Python, bug-prediction implementation, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1786430712379"><img src="./pins/browser-tools-mcp-light.svg?v=1786430712379" alt="browser-tools-mcp — JavaScript, browser-log monitor for Cursor and other editors, 0 stars, 0 forks" width="370"/></picture></td></tr>
 <tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1786430712379"><img src="./pins/popcorn-desktop-light.svg?v=1786430712379" alt="popcorn-desktop — JavaScript, multi-platform BitTorrent streaming client, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1786430712379"><img src="./pins/popcorn-time-android-light.svg?v=1786430712379" alt="popcorn-time-android — Kotlin, native torrent streaming for Android, 0 stars, 1 fork" width="370"/></picture></td></tr>
 </table>
 <!-- PINS_END -->
