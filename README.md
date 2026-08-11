@@ -90,17 +90,22 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 <!-- PINS_START -->
 ### 📌 Pinned Projects
 
-<table>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1786430712379"><img src="./pins/wifipythonutils-light.svg?v=1786430712379" alt="wifiPythonUtils" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1786430712379"><img src="./pins/gmgmt-light.svg?v=1786430712379" alt="gmgmt" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1786430712379"><img src="./pins/python-bugspots-light.svg?v=1786430712379" alt="python-bugspots" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1786430712379"><img src="./pins/browser-tools-mcp-light.svg?v=1786430712379" alt="browser-tools-mcp" width="370"/></picture></td></tr>
-<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1786430712379"><img src="./pins/popcorn-desktop-light.svg?v=1786430712379" alt="popcorn-desktop" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1786430712379"><img src="./pins/popcorn-time-android-light.svg?v=1786430712379" alt="popcorn-time-android" width="370"/></picture></td></tr>
+<table role="presentation">
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/wifipythonutils.svg?v=1786430712379"><img src="./pins/wifipythonutils-light.svg?v=1786430712379" alt="wifiPythonUtils — Python, RSSI beacon-strength utils, 1 star, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/gmgmt.svg?v=1786430712379"><img src="./pins/gmgmt-light.svg?v=1786430712379" alt="gmgmt — JavaScript, gym management software, 0 stars, 1 fork" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/python-bugspots.svg?v=1786430712379"><img src="./pins/python-bugspots-light.svg?v=1786430712379" alt="python-bugspots — Python, bug-prediction implementation, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/browser-tools-mcp.svg?v=1786430712379"><img src="./pins/browser-tools-mcp-light.svg?v=1786430712379" alt="browser-tools-mcp — JavaScript, monitor browser logs from Cursor and other editors, 0 stars, 0 forks" width="370"/></picture></td></tr>
+<tr><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-desktop.svg?v=1786430712379"><img src="./pins/popcorn-desktop-light.svg?v=1786430712379" alt="popcorn-desktop — JavaScript, multi-platform BitTorrent streaming client, 0 stars, 0 forks" width="370"/></picture></td><td width="50%"><picture><source media="(prefers-color-scheme: dark)" srcset="./pins/popcorn-time-android.svg?v=1786430712379"><img src="./pins/popcorn-time-android-light.svg?v=1786430712379" alt="popcorn-time-android — Kotlin, native torrent streaming for Android, 0 stars, 1 fork" width="370"/></picture></td></tr>
 </table>
 <!-- PINS_END -->
 
 ### 📈 GitHub Stats
 
+punitfetch (above) already covers repos, stars, commits, streak, and PRs — so this card sticks to what it doesn't: the full language spread (top 8, vs. punitfetch's top 5) as a single stacked bar, matching the terminal card's own bar-chart language instead of a decorative pie/donut.
+
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=pntgoswami18&show_icons=true&theme=gotham" alt="pntgoswami18" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-pntgoswami18.vercel.app/api/top-langs/?username=pntgoswami18&layout=compact&hide_border=true&hide_title=false&border_radius=10&bg_color=0D1117&title_color=9D6DFF&text_color=E6EDF3&langs_count=8">
+  <img alt="pntgoswami18's most used languages" src="https://github-readme-stats-pntgoswami18.vercel.app/api/top-langs/?username=pntgoswami18&layout=compact&hide_border=true&hide_title=false&border_radius=10&bg_color=FFFFFF&title_color=7C3AED&text_color=1F2328&langs_count=8">
+</picture>
 </p>
 
 ### 🔗 Connect with me
