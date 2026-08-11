@@ -99,8 +99,6 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 
 ### 📈 GitHub Stats
 
-punitfetch (above) already covers repos, stars, commits, streak, and PRs — so this card sticks to what it doesn't: the full language spread (top 8, vs. punitfetch's top 5) as a single stacked bar, matching the terminal card's own bar-chart language instead of a decorative pie/donut.
-
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-pntgoswami18.vercel.app/api/top-langs/?username=pntgoswami18&layout=compact&hide_border=true&hide_title=false&border_radius=10&bg_color=0D1117&title_color=9D6DFF&text_color=E6EDF3&langs_count=8">
