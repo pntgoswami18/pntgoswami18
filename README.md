@@ -99,7 +99,7 @@ _**I love connecting with different people** so if you want to say **hi, I'll be
 
 ### 📈 GitHub Stats
 
-<p align="center">
+<p align="left">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-pntgoswami18.vercel.app/api/top-langs/?username=pntgoswami18&layout=compact&hide_border=true&hide_title=false&border_radius=10&bg_color=0D1117&title_color=9D6DFF&text_color=E6EDF3&langs_count=8">
   <img alt="pntgoswami18's most used languages" src="https://github-readme-stats-pntgoswami18.vercel.app/api/top-langs/?username=pntgoswami18&layout=compact&hide_border=true&hide_title=false&border_radius=10&bg_color=FFFFFF&title_color=7C3AED&text_color=1F2328&langs_count=8">
